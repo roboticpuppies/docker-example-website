@@ -28,7 +28,7 @@ jobs:
       with:
         # list of Docker images to use as base name for tags
         images: |
-          ${{ vars.DOCKERHUB_USERNAME }}/${{ vars.DOCKERHUB_REPOSITORY_NAME }} }
+          ${{ vars.DOCKERHUB_USERNAME }}/${{ vars.DOCKERHUB_REPOSITORY_NAME }}
         # generate Docker tags based on the following events/attributes
         tags: |
           type=sha,prefix={{branch}}-
