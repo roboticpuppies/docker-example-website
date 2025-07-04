@@ -1,5 +1,6 @@
 name: Docker Image CI
 run-name: ${{ github.actor }} is deploying 🚀
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
